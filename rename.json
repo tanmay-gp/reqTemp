@@ -2,5 +2,5 @@
   "models/name.js": "models/{%= name %}.js",
   "collections/name.js": "collections/{%= name %}.js",
   "views/name.js" : "views/{%= name %}.js",
-  "templates/name.js" : "templates/{%= name %}.js"
+  "templates/name.ejs" : "templates/{%= name %}.ejs"
 }

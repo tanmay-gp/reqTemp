@@ -31,39 +31,28 @@ exports.template = function(grunt, init, done) {
   init.process({}, [
     // Prompt for these values.
     init.prompt('name'),
-    // init.prompt('description'),
-    // init.prompt('version'),
-    // init.prompt('repository'),
-    // init.prompt('homepage'),
-    // init.prompt('bugs'),
-    // init.prompt('licenses'),
-    // init.prompt('author_name'),
-    // init.prompt('author_email'),
-    // init.prompt('author_url'),
-    // init.prompt('node_version'),
-    // init.prompt('main'),
-    // init.prompt('npm_test', 'grunt nodeunit')
+    // init.prompt('something'),
   ], function(err, props) {
     props.keywords = [];
-    props.devDependencies = {
-      'grunt-contrib-concat': '~0.3.0',
-      'grunt-contrib-uglify': '~0.2.0',
-      'grunt-contrib-jshint': '~0.6.0',
-      'grunt-contrib-nodeunit': '~0.2.0',
-      'grunt-contrib-watch': '~0.4.0',
-    };
+    // props.devDependencies = {
+    //   'grunt-contrib-concat': '~0.3.0',
+    //   'grunt-contrib-uglify': '~0.2.0',
+    //   'grunt-contrib-jshint': '~0.6.0',
+    //   'grunt-contrib-nodeunit': '~0.2.0',
+    //   'grunt-contrib-watch': '~0.4.0',
+    // };
 
     // Files to copy (and process).
     var files = init.filesToCopy(props);
 
     // Add properly-named license files.
-    init.addLicenseFiles(files, props.licenses);
+    // init.addLicenseFiles(files, props.licenses);
 
     // Actually copy (and process) files.
     init.copyAndProcess(files, props);
 
     // Generate package.json file.
-    init.writePackageJSON('package.json', props);
+    // init.writePackageJSON('package.json', props);
 
     // All done!
     done();
