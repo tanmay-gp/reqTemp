@@ -31,18 +31,18 @@ exports.template = function(grunt, init, done) {
   init.process({}, [
     // Prompt for these values.
     init.prompt('name'),
-    init.prompt('description'),
-    init.prompt('version'),
-    init.prompt('repository'),
-    init.prompt('homepage'),
-    init.prompt('bugs'),
-    init.prompt('licenses'),
-    init.prompt('author_name'),
-    init.prompt('author_email'),
-    init.prompt('author_url'),
-    init.prompt('node_version'),
-    init.prompt('main'),
-    init.prompt('npm_test', 'grunt nodeunit')
+    // init.prompt('description'),
+    // init.prompt('version'),
+    // init.prompt('repository'),
+    // init.prompt('homepage'),
+    // init.prompt('bugs'),
+    // init.prompt('licenses'),
+    // init.prompt('author_name'),
+    // init.prompt('author_email'),
+    // init.prompt('author_url'),
+    // init.prompt('node_version'),
+    // init.prompt('main'),
+    // init.prompt('npm_test', 'grunt nodeunit')
   ], function(err, props) {
     props.keywords = [];
     props.devDependencies = {
