@@ -1,9 +1,3 @@
-# grunt-init-reqTemp
-
-> Create a commonjs module with [grunt-init][], including Nodeunit unit tests.
-
-[grunt-init]: http://gruntjs.com/project-scaffolding
-
 ## Installation
 If you haven't already done so, install [grunt-init][].
 
